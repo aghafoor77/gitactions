@@ -17,4 +17,9 @@ jobs:
       - name: echo-test
         run: echo "display my output"
         shell: bash
-        
+  comments:
+    runs-on: ubuntu-latest
+    steps:
+      - name: comment-test
+        run: echo "${{toJSON(github.event)}}" | jq
+        shell: bash
