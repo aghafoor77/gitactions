@@ -1,0 +1,20 @@
+name: test actions
+
+on:
+  push:
+    branches:
+      - main
+  pull-request:
+    branches:
+      - main
+  workflow_dispatches:
+
+jobs:
+  display:
+    runs-on: ubuntu-latest
+    steps:
+      - uses actions/checkout@v2
+      - name: echo-test
+        run: echo "display my output"
+        shell: bash
+        
