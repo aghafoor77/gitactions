@@ -11,6 +11,7 @@ public class TestSerialization {
 		testObjects.setPassword("11108487"); 
 		ObjectMapper mapper = new ObjectMapper();
 		System.out.println(mapper.writeValueAsString(testObjects));
+		System.out.println(mapper.writeValueAsString(testObjects));
 
 	}
 
